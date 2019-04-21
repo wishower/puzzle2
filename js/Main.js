@@ -228,7 +228,7 @@ function startGame() {
 	/** 初始化拼图块列表 */
 	initBlockList();
 	/** 打乱拼图 */
-	getRandomBlockList();
+	//getRandomBlockList();
 	/** 显示拼图 */
 	showBlock();
 	/** 显示提示 */
