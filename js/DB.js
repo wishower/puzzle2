@@ -4,6 +4,7 @@ function DBConn(){
 	 db.transaction(function (tx) {
      tx.executeSql('CREATE TABLE IF NOT EXISTS user_Info (user_name unique,user_password,user_score,user_step,user_time)');
      tx.executeSql('INSERT INTO  user_Info (user_name ,user_password,user_score,user_step,user_time) VALUES ("user","123456","0"," "," ")');
+   tx.executeSql('UPDATE user_Info SET user_score="0" WHERE user_name="user"');
 	
      });	
 	 
