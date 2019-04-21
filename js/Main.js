@@ -550,8 +550,7 @@ function gameOver () {
 	//记录当前分数	
 	nowTime = getTimeTxt(time);
 	nowStep = steps;
-	totalScore = nowScore;
-	//totalScore = parseInt(userInfo_list[2])+nowScore;
+	totalScore = parseInt(userInfo_list[2])+nowScore;
 	UpdateDB(totalScore,nowStep,nowTime,userInfo_list[0]);
 }
 
